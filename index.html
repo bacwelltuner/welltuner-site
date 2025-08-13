@@ -1,2 +1,151 @@
 <!DOCTYPE html>
-<!-- Keeping the same HTML from the last saved state -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WellTuner — Real-Time Fluid Level Intelligence</title>
+  <meta name="description" content="WellTuner delivers surface-based, real-time well performance intelligence for SRP, PCP, and Gas Lift operations—without permanent downhole sensors." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0e13;--ink:#e9f0f8;--muted:#9fb1c7;--line:#1e2533;--card:#121722;--accent:#69e1ff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;margin:0;background:var(--bg);color:var(--ink)}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;height:auto;border-radius:14px}
+    .container{max-width:1150px;margin:auto;padding:0 24px}
+    header{position:sticky;top:0;z-index:40;backdrop-filter:blur(6px);background:rgba(11,14,19,.6);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{font-weight:800;letter-spacing:.3px}
+    .cta{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border:1px solid var(--accent);border-radius:12px;color:#001018;background:var(--accent);font-weight:700}
+    .cta.secondary{background:transparent;color:var(--accent)}
+    /* HERO */
+    .hero{position:relative;min-height:60vh;display:grid;place-items:center;border-bottom:1px solid var(--line)}
+    .hero .bg{position:absolute;inset:0;background:url('assets/operator-night.jpg') center/cover no-repeat;filter:brightness(.55)}
+    .hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,14,19,.4),rgba(11,14,19,.7))}
+    .hero .content{position:relative;z-index:2;padding:64px 24px;text-align:center}
+    .hero h1{font-size:clamp(32px,5vw,56px);line-height:1.05;margin:0}
+    .hero p{font-size:clamp(16px,2.2vw,20px);color:var(--muted);max-width:850px;margin:12px auto 0}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
+    .badge{border:1px solid var(--line);color:var(--muted);padding:8px 12px;border-radius:999px;font-size:13px;background:rgba(17,22,33,.6)}
+    section{padding:48px 0;border-bottom:1px solid var(--line)}
+    h2{font-size:clamp(24px,3.5vw,34px);margin:0 0 8px}
+    p.lead{color:var(--muted);max-width:850px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:18px}
+    .card{border:1px solid var(--line);background:var(--card);border-radius:16px;padding:18px}
+    .twocol{display:grid;grid-template-columns:1.05fr .95fr;gap:22px}
+    @media (max-width: 900px){.twocol{grid-template-columns:1fr}}
+    .pill{border:1px solid var(--line);border-radius:12px;padding:10px 12px;color:var(--muted);display:inline-block;margin-right:8px;margin-top:8px}
+    footer{padding:28px 0;color:var(--muted);text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">WellTuner</div>
+      <nav style="display:flex;gap:12px;align-items:center">
+        <a class="cta secondary" href="#why">Benefits</a>
+        <a class="cta secondary" href="#tech">Technology</a>
+        <a class="cta" href="#contact">Request a Pilot</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="bg" aria-hidden="true"></div>
+    <div class="scrim" aria-hidden="true"></div>
+    <div class="content container">
+      <h1>Real-Time Well Performance — No Downhole Hardware</h1>
+      <p>Continuous visibility for SRP, PCP, and Gas Lift wells using a proprietary surface-based sensing and analysis approach. De-risk operations and tune lift settings without intrusive interventions.</p>
+      <div class="badges">
+        <span class="badge">Surface-installed</span>
+        <span class="badge">Edge analytics</span>
+        <span class="badge">SCADA-ready</span>
+        <span class="badge">Low power</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="why">
+      <div class="container">
+        <h2>Why Operators Use WellTuner</h2>
+        <div class="cards">
+          <div class="card"><h3>Operational Optimization</h3><p>Maintain wells at optimal drawdown and adjust lift settings based on real-time information.</p></div>
+          <div class="card"><h3>Lower Risk & OPEX</h3><p>Reduce manual site visits; detect anomalies early to minimize downtime.</p></div>
+          <div class="card"><h3>SCADA Integration</h3><p>Optional connectivity allows integration with existing control systems.</p></div>
+          <div class="card"><h3>Retrofit Friendly</h3><p>Surface-mounted design with minimal production disruption.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech">
+      <div class="container twocol" style="align-items:center">
+        <div>
+          <h2>Technology & Approach</h2>
+          <p class="lead">WellTuner uses a proprietary surface-based measurement and analysis approach to estimate well conditions. Data is processed locally with statistical and trend-based algorithms to produce decision-grade insights while minimizing assumptions about the downhole environment.</p>
+          <div>
+            <span class="pill">SRP / PCP / Gas Lift</span>
+            <span class="pill">Edge processing</span>
+            <span class="pill">Operator-owned data</span>
+            <span class="pill">IEC 60079 path</span>
+          </div>
+        </div>
+        <div>
+          <img src="assets/pastel-waves.jpg" alt="Abstract visualization of processed signal trends" />
+        </div>
+      </div>
+    </section>
+
+    <section id="evidence">
+      <div class="container twocol" style="align-items:center">
+        <div>
+          <img src="assets/signal-scope.jpg" alt="Example of stable trend readouts" />
+        </div>
+        <div>
+          <h2>Evidence & Validation</h2>
+          <p class="lead">Bench testing and comparative field trials indicate consistent performance under representative conditions. Pilots with mid-sized operators expand datasets across lift types and completion styles.</p>
+          <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:12px">
+            <div class="card"><h3>Pilot Program</h3><p>Limited-scope validation on representative wells; rapid iteration based on operator feedback.</p></div>
+            <div class="card"><h3>Data Transparency</h3><p>Side-by-side comparisons with existing measurements; export raw and processed signals.</p></div>
+            <div class="card"><h3>Safety First</h3><p>Surface-based approach minimizes risks associated with intrusive operations.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="field photo">
+      <div class="container">
+        <img src="assets/field-site.jpg" alt="Oilfield facility with tanks and equipment" />
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container twocol" style="align-items:start">
+        <div>
+          <h2>Contact</h2>
+          <p class="lead">Based in Houston, we work with operators to de-risk adoption and quantify value on-site.</p>
+          <div class="cards" style="grid-template-columns:1fr">
+            <div class="card"><h3>Email</h3><p class="muted"><a href="mailto:info@welltuner.com">info@welltuner.com</a></p></div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <h3>Quick Inquiry</h3>
+            <form action="https://formspree.io/f/your-id" method="POST">
+              <label>Name<br/><input name="name" required style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--line);background:#0f1420;color:var(--ink)"/></label><br/><br/>
+              <label>Email<br/><input type="email" name="email" required style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--line);background:#0f1420;color:var(--ink)"/></label><br/><br/>
+              <label>Message<br/><textarea name="message" rows="5" style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--line);background:#0f1420;color:var(--ink)"></textarea></label><br/><br/>
+              <button class="cta" type="submit">Send</button>
+            </form>
+            <p class="muted" style="margin-top:8px">No spam. We’ll get back within 1–2 business days.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> WellTuner. All rights reserved.<script>document.getElementById('y').textContent=new Date().getFullYear();</script></footer>
+</body>
+</html>
